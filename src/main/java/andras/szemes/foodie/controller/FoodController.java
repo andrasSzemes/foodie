@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -18,6 +19,9 @@ public class FoodController {
 
     @GetMapping
     public List<Food> getAllFoods() {
-        return null;
+        try { return foodService.getAll(); }
+        catch (NullPointerException e) {
+            return new ArrayList<>();
+        }
     }
 }
