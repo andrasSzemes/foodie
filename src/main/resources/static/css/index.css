@@ -40,8 +40,7 @@ body {
 
 .food-img {
     height: inherit;
-    margin-left: 63vw;
-    transform: translate(-50%, 0%);
+    margin-left: 36vw;
     border-radius: 10vh;
     box-shadow: 0px 0px 12px 3px grey;
     position: absolute;
