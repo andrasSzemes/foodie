@@ -17,7 +17,7 @@ public class FoodController {
     private FoodService foodService;
 
     @GetMapping
-    public List<Food> getAllImgs() {
+    public List<Food> getAllFoods() {
         return null;
     }
 }
