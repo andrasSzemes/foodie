@@ -3,6 +3,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    margin: 0px;
 }
 
 #title {
@@ -15,4 +16,44 @@ body {
     top: 5vh;
     text-shadow: 4px -1px 0px rgba(255,255,255,0.5);
     letter-spacing: 3px;
+}
+
+#food-modals {
+    top: 13vh;
+    position: fixed;
+    width: 100vw;
+    height: 87vh;
+    overflow: scroll;
+}
+
+.food-modal {
+    height: 60vh;
+    margin: 2vh 0vh;
+    color: transparent;
+    transition-duration: 0.15s;
+}
+
+.food-modal:hover {
+    color: black !important;
+    transition-duration: 0.15s;
+}
+
+.food-img {
+    height: inherit;
+    margin-left: 63vw;
+    transform: translate(-50%, 0%);
+    border-radius: 10vh;
+    box-shadow: 0px 0px 12px 3px grey;
+    position: absolute;
+}
+
+.food-note {
+    height: 51vh;
+    width: 28vw;
+    margin-left: 7vw;
+    color: inherit;
+    text-align: -webkit-right;
+    font-size: x-large;
+    padding-top: 5vh;
+    overflow: scroll;
 }
