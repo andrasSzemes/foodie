@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class FoodService {
 
-    @Autowired(required = false)
+    @Autowired
     private FoodRepository foodRepository;
 
     public List<Food> getAll() {
