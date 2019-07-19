@@ -23,6 +23,6 @@ public class Food {
 
     private String note;
     private Date cookingDate;
-    private String imgBase64;
+    private String imgName;
 
 }
