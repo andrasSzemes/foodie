@@ -13,3 +13,12 @@ export function sendAjax(endpoint, method, params, onSuccess, onFail) {
     }
     req.send(params);
 }
+
+export function switchClassOnOff(element, className) {
+    if (element.classList.contains(className)) {
+        element.classList.remove(className);
+    }
+    else {
+        element.classList.add(className)
+    }
+}
