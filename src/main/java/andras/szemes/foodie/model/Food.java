@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -21,6 +22,7 @@ public class Food {
     @GeneratedValue
     private int id;
 
+    @Column(length=4000)
     private String note;
     private Date cookingDate;
     private String imgName;
