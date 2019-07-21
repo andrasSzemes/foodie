@@ -7,16 +7,22 @@ body {
     user-select: none;
 }
 
+#_F {color: bisque;}
+#_O1 {color: #fa9d82;}
+#_O2 {color: #ff8b8b;}
+#_D {color: bisque;}
+#_I {color: #fa9d82;}
+#_E {color: #ff8b8b;}
+
 #title {
     position: fixed;
-    transform: translate(-50%, -50%) scale(2.6, 1.5);
+    transform: translate(-38%, -50%) scale(2.6, 1.5);
     left: 50vw;
     font-size: -webkit-xxx-large;
     font-family: monospace;
-    color: #fa9d82;
     top: 5vh;
     text-shadow: 4px -1px 0px #b39492;
-    letter-spacing: 3px;
+    letter-spacing: 35px;
 }
 
 #food-modals {
