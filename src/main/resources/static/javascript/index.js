@@ -11,7 +11,6 @@ function loadFoods() {
         () => {
             let response = JSON.parse(event.target.response);
             let container = document.querySelector("#food-modals");
-            console.log(response);
 
             for (let foodInfo of response) {
                 let modal = createFoodModal(foodInfo);
