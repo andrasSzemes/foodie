@@ -62,7 +62,7 @@ body {
     position: absolute;
     cursor: pointer;
     text-align: -webkit-center;
-    white-space: pre;
+    white-space: pre-wrap;
 }
 
 .show {
