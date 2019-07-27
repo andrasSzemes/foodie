@@ -15,21 +15,17 @@ body {
 #_E {color: #ff8b8b;}
 
 #title {
-    position: fixed;
-    transform: translate(-38%, -50%) scale(2.6, 1.5);
-    left: 50vw;
+    transform: scale(2.6, 1.5);
     font-size: -webkit-xxx-large;
     font-family: monospace;
-    top: 5vh;
     text-shadow: 4px -1px 0px #b39492;
-    letter-spacing: 35px;
+    text-align: center;
 }
 
 #food-modals {
-    top: 13vh;
     position: fixed;
     width: 100vw;
-    height: 87vh;
+    height: 100vh;
     overflow: scroll;
 }
 
