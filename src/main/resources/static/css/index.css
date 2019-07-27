@@ -30,29 +30,29 @@ body {
 }
 
 .food-modal {
-    height: 60vh;
-    margin: 2vh 0vh;
+    margin: 6vh 0vh;
     color: transparent;
     transition-duration: 0.15s;
+    width: 100vw;
+    height: 75vw;
 }
 
 .food-img {
     height: inherit;
     margin-left: 50vw;
-    border-radius: 10vh;
     box-shadow: 0px 0px 12px -1px #b39492;
-    position: absolute;
     transform: translate(-50%, 0%);
     cursor: pointer;
+    width: inherit;
 }
 
 .food-note {
-    height: 53.8vh;
-    width: 61vh;
+    height: 71vw;
+    width: 75vw;
     margin-left: 50vw;
     color: floralwhite;
     font-size: x-large;
-    padding: 3vh;
+    padding: 2vw;
     overflow: scroll;
     background-color: rgba(166, 120, 70, 0.8);
     border-radius: 3vh;
