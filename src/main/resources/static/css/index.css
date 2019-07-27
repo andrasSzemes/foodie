@@ -47,20 +47,20 @@ body {
 }
 
 .food-note {
-    height: 71vw;
-    width: 75vw;
-    margin-left: 50vw;
+    height: 70.8vw;
+    width: 62vw;
     color: floralwhite;
     font-size: x-large;
     padding: 2vw;
     overflow: scroll;
     background-color: rgba(166, 120, 70, 0.8);
-    border-radius: 3vh;
+    border-top-right-radius: 3vw;
+    border-bottom-right-radius: 3vw;
     border: 1px dashed black;
-    transform: translate(-50%, 0%);
-    opacity: 0;
-    z-index: -1;
-    transition-duration: 0.15s;
+    border-left-width: 0;
+    transform: translate(-101%, 0%);
+    z-index: 1;
+    transition-duration: 0.3s;
     position: absolute;
     cursor: pointer;
     text-align: -webkit-center;
@@ -68,7 +68,6 @@ body {
 }
 
 .show {
-    opacity: 1;
-    z-index: 1;
-    transition-duration: 0.15s;
+    transition-duration: 0.2s;
+    transform: translate(0%, 0%);
 }
