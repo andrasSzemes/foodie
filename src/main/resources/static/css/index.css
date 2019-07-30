@@ -5,9 +5,6 @@ body {
     overflow: hidden;
     margin: 0px;
     user-select: none;
-    /*for disabling horizontal scroll*/
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 #_F {color: bisque;}
@@ -25,52 +22,112 @@ body {
     text-align: center;
 }
 
-#food-modals {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    overflow: scroll;
+@media (max-aspect-ratio: 4/3) {
+    #food-modals {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+        /*for disabling horizontal scroll*/
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .food-modal {
+        margin: 6vh 0vh;
+        color: transparent;
+        transition-duration: 0.15s;
+        width: 100vw;
+        height: 75vw;
+    }
+
+    .food-img {
+        height: inherit;
+        margin-left: 50vw;
+        box-shadow: 0px 0px 12px -1px #b39492;
+        transform: translate(-50%, 0%);
+        cursor: pointer;
+        width: inherit;
+    }
+
+    .food-note {
+        height: 70.8vw;
+        width: 62vw;
+        color: floralwhite;
+        font-size: x-large;
+        padding: 2vw;
+        overflow: scroll;
+        background-color: rgba(166, 120, 70, 0.8);
+        border-top-right-radius: 3vw;
+        border-bottom-right-radius: 3vw;
+        border: 1px dashed black;
+        border-left-width: 0;
+        transform: translate(-101%, 0%);
+        z-index: 1;
+        transition-duration: 0.3s;
+        position: absolute;
+        cursor: pointer;
+        text-align: -webkit-center;
+        white-space: pre-wrap;
+    }
+
+    .show {
+        transition-duration: 0.2s;
+        transform: translate(0%, 0%);
+    }
 }
 
-.food-modal {
-    margin: 6vh 0vh;
-    color: transparent;
-    transition-duration: 0.15s;
-    width: 100vw;
-    height: 75vw;
-}
+@media (min-aspect-ratio: 4/3) {
+    #food-modals {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+        /*for disabling horizontal scroll*/
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
-.food-img {
-    height: inherit;
-    margin-left: 50vw;
-    box-shadow: 0px 0px 12px -1px #b39492;
-    transform: translate(-50%, 0%);
-    cursor: pointer;
-    width: inherit;
-}
+    .food-modal {
+        margin: 6vh 0vh;
+        color: transparent;
+        transition-duration: 0.15s;
+        width: 133.2vh;
+        height: 99.9vh;
+    }
 
-.food-note {
-    height: 70.8vw;
-    width: 62vw;
-    color: floralwhite;
-    font-size: x-large;
-    padding: 2vw;
-    overflow: scroll;
-    background-color: rgba(166, 120, 70, 0.8);
-    border-top-right-radius: 3vw;
-    border-bottom-right-radius: 3vw;
-    border: 1px dashed black;
-    border-left-width: 0;
-    transform: translate(-101%, 0%);
-    z-index: 1;
-    transition-duration: 0.3s;
-    position: absolute;
-    cursor: pointer;
-    text-align: -webkit-center;
-    white-space: pre-wrap;
-}
+    .food-img {
+        height: inherit;
+        margin-left: 50vw;
+        box-shadow: 0px 0px 12px -1px #b39492;
+        transform: translate(-50%, 0%);
+        cursor: pointer;
+        width: inherit;
+    }
 
-.show {
-    transition-duration: 0.2s;
-    transform: translate(0%, 0%);
+    .food-note {
+        height: 95.6vh;
+        width: 45vw;
+        color: floralwhite;
+        font-size: x-large;
+        padding: 2vh;
+        overflow: scroll;
+        background-color: rgba(166, 120, 70, 0.8);
+        border-top-right-radius: 3vw;
+        border-bottom-right-radius: 3vw;
+        border: 1px dashed black;
+        border-left-width: 0;
+        transform: translate(-101%, 0%);
+        z-index: 1;
+        transition-duration: 0.3s;
+        position: absolute;
+        cursor: pointer;
+        text-align: -webkit-center;
+        white-space: pre-wrap;
+    }
+
+    .show {
+        transition-duration: 0.2s;
+        transform: translate(0%, 0%);
+    }
 }
