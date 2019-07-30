@@ -48,6 +48,7 @@ body {
         transform: translate(-50%, 0%);
         cursor: pointer;
         width: inherit;
+        position: absolute;
     }
 
     .food-note {
@@ -74,6 +75,19 @@ body {
     .show {
         transition-duration: 0.2s;
         transform: translate(0%, 0%);
+    }
+
+    .food-date {
+        width: -webkit-fill-available;
+        height: fit-content;
+        color: white;
+        font-size: large;
+        position: absolute;
+        text-align: right;
+        padding-right: 2vw;
+        letter-spacing: 1vh;
+        font-style: italic;
+        padding-top: 1vw;
     }
 }
 
@@ -103,6 +117,7 @@ body {
         transform: translate(-50%, 0%);
         cursor: pointer;
         width: inherit;
+        position: absolute;
     }
 
     .food-note {
@@ -129,5 +144,19 @@ body {
     .show {
         transition-duration: 0.2s;
         transform: translate(0%, 0%);
+    }
+
+    .food-date {
+        width: 100vh;
+        height: fit-content;
+        color: white;
+        font-size: large;
+        position: absolute;
+        text-align: right;
+        letter-spacing: 1vh;
+        font-style: italic;
+        padding-top: 1vw;
+        transform: translate(-37%, 0);
+        margin-left: 50vw;
     }
 }

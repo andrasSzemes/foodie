@@ -6,8 +6,10 @@ export function createFoodModal(info) {
 
     let noteElement = createNote(info.note);
     let imgElement = createImg("/img/" + info.imgName, noteElement);
+    let dateElement = createDate(info.cookingDateRepr);
     modal.appendChild(noteElement);
     modal.appendChild(imgElement);
+    modal.appendChild(dateElement);
 
     return modal;
 }
@@ -35,6 +37,14 @@ function createNote(text) {
     });
 
     return note;
+}
+
+function createDate(value) {
+    let date = document.createElement("div");
+    date.classList.add("food-date");
+    date.innerHTML=value;
+
+    return date;
 }
 
 /**
