@@ -5,6 +5,9 @@ body {
     overflow: hidden;
     margin: 0px;
     user-select: none;
+    /*for disabling horizontal scroll*/
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #_F {color: bisque;}
