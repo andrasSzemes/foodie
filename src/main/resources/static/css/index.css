@@ -129,30 +129,31 @@ body {
     }
 
     .food-note {
-        height: 95.6vh;
+        height: 95.7vh;
         width: 45vw;
         color: floralwhite;
         font-size: x-large;
         padding: 2vh;
         overflow: scroll;
         background-color: rgba(166, 120, 70, 0.8);
-        border-top-right-radius: 3vw;
+        border-bottom-left-radius: 3vw;
         border-bottom-right-radius: 3vw;
         border: 1px dashed black;
-        border-left-width: 0;
-        transform: translate(-101%, 0%);
+        border-top-width: 0;
+        transform: translate(-50%, -100%);
         z-index: 1;
         transition-duration: 0.3s;
         position: absolute;
         cursor: pointer;
         text-align: -webkit-center;
         white-space: pre-wrap;
-        display: none;
+        margin-left: 50vw;
+        overflow-x: hidden;
     }
 
     .show {
         transition-duration: 0.2s;
-        transform: translate(0%, 0%);
+        transform: translate(-50%, 0%);
     }
 
     .food-date {
