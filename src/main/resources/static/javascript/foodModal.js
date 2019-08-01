@@ -3,6 +3,7 @@ import {switchClassOnOff} from "/javascript/utility.js";
 export function createFoodModal(info) {
     let modal = document.createElement("div");
     modal.classList.add("food-modal");
+    modal.classList.add("slide");
 
     let noteElement = createNote(info.note);
     let imgElement = createImg("/img/" + info.imgName, noteElement);

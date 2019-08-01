@@ -20,6 +20,16 @@ body {
     font-family: monospace;
     text-shadow: 4px -1px 0px #b39492;
     text-align: center;
+    position: fixed;
+    display: none;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+}
+.slide {
+    flex-shrink: 0;
 }
 
 @media (max-aspect-ratio: 4/3) {
@@ -28,9 +38,6 @@ body {
         width: 100vw;
         height: 100vh;
         overflow: scroll;
-        /*for disabling horizontal scroll*/
-        max-width: 100%;
-        overflow-x: hidden;
     }
 
     .food-modal {
@@ -70,6 +77,7 @@ body {
         cursor: pointer;
         text-align: -webkit-center;
         white-space: pre-wrap;
+        display: none;
     }
 
     .show {
@@ -97,9 +105,6 @@ body {
         width: 100vw;
         height: 100vh;
         overflow: scroll;
-        /*for disabling horizontal scroll*/
-        max-width: 100%;
-        overflow-x: hidden;
     }
 
     .food-modal {
@@ -139,6 +144,7 @@ body {
         cursor: pointer;
         text-align: -webkit-center;
         white-space: pre-wrap;
+        display: none;
     }
 
     .show {
@@ -160,3 +166,18 @@ body {
         margin-left: 50vw;
     }
 }
+
+/*border-top-right-radius: 6vw 3vw;*/
+/*a dátumnak a sávja nem kattintható
+
+    szürkévé tenni a képeket.
+    beállítani egy kisebb elemet még a note-ba ami tartalmazza a szöveget, hogy a görgető ne
+        menjen ki a lekerekített mezőből
+    lehet a noteban jobbra görgetni, ezt meg kell szüntetni.
+    Az indentálást el lehetne dönteni hogyan legyen
+    A note háttere barna maradjon, ha amúgy a deszkázat fekete-fehér lesz?
+    Ma még gondolkodtam valami naptár lehetőségen
+    A kis képen is gondolkodtam magamról, hogy hova lehetne rakni
+    Léptetésen gondolkodtam még, de nincs egyértelmű ötletem rá, ami tuti fix menő
+
+*/
