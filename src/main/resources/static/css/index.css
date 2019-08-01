@@ -27,9 +27,13 @@ body {
 .slider {
     display: flex;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
 }
+
 .slide {
     flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 @media (max-aspect-ratio: 4/3) {
@@ -108,10 +112,9 @@ body {
     }
 
     .food-modal {
-        margin: 6vh 0vh;
         color: transparent;
         transition-duration: 0.15s;
-        width: 133.2vh;
+        width: 100vw;
         height: 99.9vh;
     }
 
@@ -121,7 +124,7 @@ body {
         box-shadow: 0px 0px 12px -1px #b39492;
         transform: translate(-50%, 0%);
         cursor: pointer;
-        width: inherit;
+        width: 133.2vh;
         position: absolute;
     }
 
