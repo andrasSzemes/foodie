@@ -81,7 +81,7 @@ body {
         transition-duration: 0.3s;
         position: absolute;
         cursor: pointer;
-        text-align: -webkit-center;
+        text-align: justify;
         white-space: pre-wrap;
     }
 
@@ -158,7 +158,7 @@ body {
         transition-duration: 0.3s;
         position: absolute;
         cursor: pointer;
-        text-align: -webkit-center;
+        text-align: justify;
         white-space: pre-wrap;
         margin-left: 50vw;
         overflow-x: hidden;
@@ -186,8 +186,6 @@ body {
 
 /*border-top-right-radius: 6vw 3vw;*/
 /*a dátumnak a sávja nem kattintható
-
-    szürkévé tenni a képeket.
     beállítani egy kisebb elemet még a note-ba ami tartalmazza a szöveget, hogy a görgető ne
         menjen ki a lekerekített mezőből
     Az indentálást el lehetne dönteni hogyan legyen
